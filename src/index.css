@@ -1,0 +1,165 @@
+@import "tailwindcss";
+
+@layer base {
+  :root {
+    --font-cinzel: 'Cinzel', serif;
+    --font-montserrat: 'Montserrat', sans-serif;
+  }
+}
+
+.font-cinzel {
+  font-family: 'Cinzel', Georgia, serif;
+}
+
+.font-montserrat {
+  font-family: 'Montserrat', sans-serif;
+}
+
+.font-playfair {
+  font-family: 'Playfair Display', Georgia, serif;
+}
+
+/* Cinematic Light Sweep Effect */
+@keyframes lightSweep {
+  0% {
+    transform: translateX(-150%) skewX(-25deg);
+  }
+  50%, 100% {
+    transform: translateX(250%) skewX(-25deg);
+  }
+}
+
+.animate-light-sweep {
+  position: relative;
+  overflow: hidden;
+}
+
+.animate-light-sweep::after {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 60%;
+  height: 100%;
+  background: linear-gradient(
+    90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.08) 40%,
+    rgba(255, 255, 255, 0.28) 50%,
+    rgba(255, 255, 255, 0.08) 60%,
+    transparent 100%
+  );
+  transform: translateX(-150%) skewX(-25deg);
+  animation: lightSweep 6s infinite ease-in-out;
+  pointer-events: none;
+}
+
+/* Subtle 3D Floating Animations */
+@keyframes float3D {
+  0%, 100% {
+    transform: translateY(0px) rotateX(0deg) rotateY(0deg);
+  }
+  50% {
+    transform: translateY(-10px) rotateX(3deg) rotateY(-3deg);
+  }
+}
+
+.animate-float-3d {
+  animation: float3D 6s ease-in-out infinite;
+}
+
+@keyframes pulseGlow {
+  0%, 100% {
+    opacity: 0.4;
+    filter: drop-shadow(0 0 15px rgba(59, 130, 246, 0.4));
+  }
+  50% {
+    opacity: 0.85;
+    filter: drop-shadow(0 0 35px rgba(227, 55, 40, 0.65));
+  }
+}
+
+.animate-pulse-glow {
+  animation: pulseGlow 4s ease-in-out infinite;
+}
+
+/* Glassmorphism Classes */
+.glass-panel {
+  background: rgba(15, 23, 42, 0.75);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+.glass-panel-light {
+  background: rgba(255, 255, 255, 0.88);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  border: 1px solid rgba(226, 232, 240, 0.8);
+}
+
+.glass-card-interactive {
+  transition: all 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+.glass-card-interactive:hover {
+  transform: translateY(-6px) scale(1.01);
+  border-color: rgba(59, 130, 246, 0.4);
+  box-shadow: 0 20px 40px -15px rgba(37, 99, 235, 0.3);
+}
+
+/* 3D Button Styles */
+.btn-3d-primary {
+  position: relative;
+  background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+  border-radius: 9999px;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 6px 0 #881337, 0 12px 24px rgba(225, 29, 72, 0.4);
+  transition: all 0.15s ease-out;
+}
+
+.btn-3d-primary:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #881337, 0 16px 28px rgba(225, 29, 72, 0.55);
+}
+
+.btn-3d-primary:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #881337, 0 6px 12px rgba(225, 29, 72, 0.3);
+}
+
+.btn-3d-blue {
+  position: relative;
+  background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+  border-radius: 9999px;
+  color: white;
+  font-weight: 700;
+  box-shadow: 0 6px 0 #1e3a8a, 0 12px 24px rgba(37, 99, 235, 0.4);
+  transition: all 0.15s ease-out;
+}
+
+.btn-3d-blue:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 0 #1e3a8a, 0 16px 28px rgba(37, 99, 235, 0.55);
+}
+
+.btn-3d-blue:active {
+  transform: translateY(4px);
+  box-shadow: 0 2px 0 #1e3a8a, 0 6px 12px rgba(37, 99, 235, 0.3);
+}
+
+/* Chess Board Tile Patterns */
+.bg-chess-tile-dark {
+  background-color: #334155;
+}
+.bg-chess-tile-light {
+  background-color: #cbd5e1;
+}
+
+/* Perspective Container for 3D Carousels */
+.perspective-1000 {
+  perspective: 1000px;
+}
+

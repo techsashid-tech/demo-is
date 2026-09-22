@@ -1,0 +1,6 @@
+{
+  "name": "IS Chess Centre",
+  "description": "Premier Chess Academy and Tournament Hub in Mahanadi Vihar, Cuttack, Odisha. Comprehensive coaching, FIDE-rated events, browser chess tools, and master training.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

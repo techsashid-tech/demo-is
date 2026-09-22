@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html lang="en" class="scroll-smooth">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IS CHESS CENTRE – Premier Chess Academy & FIDE Tournaments | Cuttack, Odisha</title>
+  <meta name="description" content="IS CHESS CENTRE in Mahanadi Vihar, Cuttack, Odisha – 753004. Comprehensive chess coaching, grassroots development, FIDE rated international tournaments, and interactive online chess lab.">
+  <meta name="keywords" content="IS Chess Centre Cuttack, Chess Centre in Cuttack, Chess Academy in Cuttack, Chess Coaching in Cuttack, FIDE Rated Chess Tournament Cuttack, Mahanadi Vihar Chess">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@600;700;800;900&family=Montserrat:wght@300;400;500;600;700;800&family=Playfair+Display:ital,wght@1,600&display=swap" rel="stylesheet">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          fontFamily: {
+            cinzel: ['Cinzel', 'Georgia', 'serif'],
+            montserrat: ['Montserrat', 'sans-serif'],
+            playfair: ['Playfair Display', 'serif']
+          }
+        }
+      }
+    }
+  </script>
+  <style>
+    @keyframes lightSweep {
+      0% { transform: translateX(-150%) skewX(-25deg); }
+      50%, 100% { transform: translateX(250%) skewX(-25deg); }
+    }
+    .animate-light-sweep {
+      position: relative;
+      overflow: hidden;
+    }
+    .animate-light-sweep::after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 60%;
+      height: 100%;
+      background: linear-gradient(90deg, transparent 0%, rgba(255,255,255,0.08) 40%, rgba(255,255,255,0.25) 50%, rgba(255,255,255,0.08) 60%, transparent 100%);
+      transform: translateX(-150%) skewX(-25deg);
+      animation: lightSweep 6s infinite ease-in-out;
+      pointer-events: none;
+    }
+    .btn-3d-red {
+      background: linear-gradient(135deg, #e11d48 0%, #be123c 100%);
+      box-shadow: 0 5px 0 #881337, 0 10px 20px rgba(225, 29, 72, 0.4);
+      transition: all 0.15s ease-out;
+    }
+    .btn-3d-red:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 7px 0 #881337, 0 14px 24px rgba(225, 29, 72, 0.55);
+    }
+    .btn-3d-red:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #881337, 0 4px 10px rgba(225, 29, 72, 0.3);
+    }
+    .btn-3d-blue {
+      background: linear-gradient(135deg, #2563eb 0%, #1d4ed8 100%);
+      box-shadow: 0 5px 0 #1e3a8a, 0 10px 20px rgba(37, 99, 235, 0.4);
+      transition: all 0.15s ease-out;
+    }
+    .btn-3d-blue:hover {
+      transform: translateY(-2px);
+      box-shadow: 0 7px 0 #1e3a8a, 0 14px 24px rgba(37, 99, 235, 0.55);
+    }
+    .btn-3d-blue:active {
+      transform: translateY(3px);
+      box-shadow: 0 2px 0 #1e3a8a, 0 4px 10px rgba(37, 99, 235, 0.3);
+    }
+  </style>
+</head>
+<body class="bg-slate-950 text-slate-100 font-montserrat selection:bg-rose-600 selection:text-white antialiased overflow-x-hidden min-h-screen">
+
+  <!-- NAVBAR -->
+  <header class="fixed top-0 left-0 right-0 z-50 bg-slate-950/90 backdrop-blur-md border-b border-slate-800/80 py-3">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 flex items-center justify-between gap-4">
+      <a href="#home" class="flex items-center gap-3">
+        <!-- Official Logo SVG -->
+        <svg viewBox="0 0 512 512" class="w-10 h-10 rounded-xl overflow-hidden shadow-lg" xmlns="http://www.w3.org/2000/svg">
+          <rect x="0" y="0" width="256" height="264" fill="#eb4232" />
+          <rect x="256" y="0" width="256" height="264" fill="#3b82f6" />
+          <rect x="0" y="260" width="512" height="252" fill="#1e295d" />
+          <circle cx="132" cy="74" r="23" fill="#ffffff" />
+          <path d="M 120 110 L 144 110 L 144 214 Q 158 220 166 230 L 166 238 L 98 238 L 98 230 Q 106 220 120 214 Z" fill="#ffffff" />
+          <path d="M 440 82 C 430 65 400 42 355 42 C 302 42 262 76 262 128 C 262 178 305 212 358 238 C 392 254 416 270 416 292 C 416 318 386 338 344 338 C 298 338 268 316 256 294 L 268 284 C 280 302 305 322 344 322 C 376 322 402 308 402 288 C 402 266 376 248 340 230 C 286 202 248 168 248 122 C 248 64 296 28 356 28 C 406 28 440 54 456 75 Z" fill="#ffffff" />
+          <text x="256" y="388" font-family="Cinzel, serif" font-size="76" font-weight="800" letter-spacing="4" fill="#ffffff" text-anchor="middle">CHESS</text>
+          <text x="256" y="458" font-family="Montserrat, sans-serif" font-size="34" font-weight="800" letter-spacing="14" fill="#ffffff" text-anchor="middle">CENTRE</text>
+        </svg>
+        <div>
+          <span class="font-cinzel text-lg sm:text-xl font-bold tracking-wider text-white">IS CHESS CENTRE</span>
+          <span class="block text-[10px] tracking-widest text-slate-400 uppercase">Mahanadi Vihar • Cuttack</span>
+        </div>
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-1 bg-slate-900/60 p-1.5 rounded-full border border-slate-800">
+        <a href="#home" class="px-3 py-1.5 rounded-full text-xs font-medium text-slate-300 hover:text-white">Home</a>
+        <a href="#about" class="px-3 py-1.5 rounded-full text-xs font-medium text-slate-300 hover:text-white">About</a>
+        <a href="#programs" class="px-3 py-1.5 rounded-full text-xs font-medium text-slate-300 hover:text-white">Programs</a>
+        <a href="#tournaments" class="px-3 py-1.5 rounded-full text-xs font-medium text-slate-300 hover:text-white">Tournaments</a>
+        <a href="#tools" class="px-3 py-1.5 rounded-full text-xs font-medium text-slate-300 hover:text-white">Chess Lab</a>
+        <a href="#play" class="px-3 py-1.5 rounded-full text-xs font-medium text-amber-300 hover:text-amber-200">♟ Play Chess</a>
+        <a href="#gallery" class="px-3 py-1.5 rounded-full text-xs font-medium text-slate-300 hover:text-white">Gallery</a>
+        <a href="#reviews" class="px-3 py-1.5 rounded-full text-xs font-medium text-slate-300 hover:text-white">Reviews</a>
+        <a href="#contact" class="px-3 py-1.5 rounded-full text-xs font-medium text-slate-300 hover:text-white">Contact</a>
+      </nav>
+
+      <div class="flex items-center gap-2">
+        <a href="https://s1.chess-results.com/tnr1420724.aspx?lan=1&tno=1420724&zeilen=99999&SNode=S0" target="_blank" rel="noopener noreferrer" class="hidden sm:inline-flex items-center gap-1.5 px-3 py-1.5 text-xs font-semibold rounded-full bg-blue-900/50 text-blue-200 border border-blue-700/60">
+          🏆 Results ↗
+        </a>
+        <a href="#contact" class="btn-3d-red px-4 py-1.5 text-xs font-bold uppercase tracking-wider text-white rounded-full">
+          Enquiry
+        </a>
+      </div>
+    </div>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="home" class="min-h-screen pt-32 pb-20 flex flex-col justify-center relative overflow-hidden">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 relative z-10 w-full grid grid-cols-1 lg:grid-cols-12 gap-12 items-center">
+      <div class="lg:col-span-7 space-y-6 text-left">
+        <div class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-slate-900 border border-slate-800 text-xs text-slate-300">
+          <span class="w-2 h-2 rounded-full bg-emerald-500"></span>
+          <span>Premier Chess Academy & Tournament Organizer in Cuttack</span>
+        </div>
+        <h1 class="font-cinzel text-4xl sm:text-6xl font-black text-white leading-tight">
+          IS CHESS <span class="text-transparent bg-clip-text bg-gradient-to-r from-red-500 via-rose-400 to-blue-400">CENTRE</span>
+        </h1>
+        <p class="font-playfair italic text-2xl text-amber-300">
+          “Where Champions Begin”
+        </p>
+        <p class="text-slate-300 text-sm sm:text-base leading-relaxed max-w-xl">
+          Nurturing thinkers, strategists, and national champions from <strong>Mahanadi Vihar, Cuttack, Odisha – 753004</strong>. From 4-year-old grassroots beginners to titled FIDE masters, we combine classical chess mastery with regular tournament exposure.
+        </p>
+        <div class="flex flex-wrap gap-4 pt-2">
+          <a href="https://syamchessverse.vercel.app/#creator-spotlight" target="_blank" rel="noopener noreferrer" class="btn-3d-red px-6 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
+            <span>♟ Play Free Chess Now</span> ↗
+          </a>
+          <a href="https://s1.chess-results.com/tnr1420724.aspx?lan=1&tno=1420724&zeilen=99999&SNode=S0" target="_blank" rel="noopener noreferrer" class="btn-3d-blue px-6 py-3.5 rounded-full text-xs font-bold uppercase tracking-wider text-white flex items-center gap-2">
+            <span>🏆 FIDE Chess Results</span> ↗
+          </a>
+          <a href="#tools" class="px-5 py-3 rounded-full border border-slate-700 bg-slate-900 text-xs font-semibold text-slate-200">
+            15 Chess Lab Tools
+          </a>
+        </div>
+        <div class="pt-4 text-xs text-slate-400 flex flex-wrap gap-4">
+          <a href="https://www.google.com/maps/place/IS+CHESS+CENTRE/@20.4633061,85.9112682,17z/" target="_blank" rel="noopener noreferrer" class="hover:text-amber-400">
+            📍 Mahanadi Vihar, Cuttack, Odisha – 753004
+          </a>
+          <span>•</span>
+          <a href="tel:+919437208864" class="hover:text-white">
+            📞 +91 94372 08864
+          </a>
+        </div>
+      </div>
+
+      <div class="lg:col-span-5 flex justify-center">
+        <div class="w-full max-w-md rounded-3xl border border-slate-800 bg-slate-900/90 p-6 shadow-2xl backdrop-blur-xl animate-light-sweep text-center">
+          <svg viewBox="0 0 512 512" class="w-32 h-32 mx-auto rounded-2xl overflow-hidden shadow-2xl mb-4" xmlns="http://www.w3.org/2000/svg">
+            <rect x="0" y="0" width="256" height="264" fill="#eb4232" />
+            <rect x="256" y="0" width="256" height="264" fill="#3b82f6" />
+            <rect x="0" y="260" width="512" height="252" fill="#1e295d" />
+            <circle cx="132" cy="74" r="23" fill="#ffffff" />
+            <path d="M 120 110 L 144 110 L 144 214 Q 158 220 166 230 L 166 238 L 98 238 L 98 230 Q 106 220 120 214 Z" fill="#ffffff" />
+            <path d="M 440 82 C 430 65 400 42 355 42 C 302 42 262 76 262 128 C 262 178 305 212 358 238 C 392 254 416 270 416 292 C 416 318 386 338 344 338 C 298 338 268 316 256 294 L 268 284 C 280 302 305 322 344 322 C 376 322 402 308 402 288 C 402 266 376 248 340 230 C 286 202 248 168 248 122 C 248 64 296 28 356 28 C 406 28 440 54 456 75 Z" fill="#ffffff" />
+            <text x="256" y="388" font-family="Cinzel, serif" font-size="76" font-weight="800" letter-spacing="4" fill="#ffffff" text-anchor="middle">CHESS</text>
+            <text x="256" y="458" font-family="Montserrat, sans-serif" font-size="34" font-weight="800" letter-spacing="14" fill="#ffffff" text-anchor="middle">CENTRE</text>
+          </svg>
+          <h3 class="font-cinzel text-xl font-bold text-white">ADMISSIONS OPEN 2026–27</h3>
+          <p class="text-xs text-amber-400 mt-1 mb-4 font-semibold">Grassroots to FIDE International Rating</p>
+          <div className="space-y-2 text-xs text-slate-300 text-left">
+            <div>✓ Official FIDE International Rating Coaching</div>
+            <div>✓ Organizers of 4th & 5th IS Open FIDE Tournaments</div>
+            <div>✓ DGT Electronic Clock & Score Recording Practice</div>
+          </div>
+          <a href="#contact" class="mt-6 block w-full py-2.5 rounded-xl bg-gradient-to-r from-red-600 to-rose-700 text-white font-bold text-xs uppercase tracking-wider">
+            Request Free Skill Assessment
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT SECTION -->
+  <section id="about" class="py-20 bg-slate-900/60 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6">
+      <div class="text-center max-w-3xl mx-auto mb-14 space-y-2">
+        <h2 class="font-cinzel text-3xl font-extrabold text-white">BUILDING MINDS, ONE MOVE AT A TIME</h2>
+        <p class="text-xs sm:text-sm text-slate-400">Headquartered in Mahanadi Vihar, Cuttack, Odisha – 753004, IS CHESS CENTRE has stood as a beacon of intellectual discipline and tournament excellence for over 15 years.</p>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-4 gap-6 text-center">
+        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <div class="text-3xl mb-2">🧠</div>
+          <h3 class="font-cinzel font-bold text-white mb-1">Cognitive Mastery</h3>
+          <p class="text-xs text-slate-400">Develop pattern recognition, calculation depth, and foresight.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <div class="text-3xl mb-2">🏆</div>
+          <h3 class="font-cinzel font-bold text-white mb-1">FIDE Tournament Path</h3>
+          <p class="text-xs text-slate-400">Direct exposure to recognized FIDE events and Swiss-Manager pairings.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <div class="text-3xl mb-2">🎯</div>
+          <h3 class="font-cinzel font-bold text-white mb-1">Grassroots Inception</h3>
+          <p class="text-xs text-slate-400">Specialized batches for ages 4–8 transforming energy into patience.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800">
+          <div class="text-3xl mb-2">🤝</div>
+          <h3 class="font-cinzel font-bold text-white mb-1">Character & Grit</h3>
+          <p class="text-xs text-slate-400">Learn to evaluate setbacks calmly and celebrate success with grace.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TOURNAMENTS & RESULTS -->
+  <section id="tournaments" class="py-20 bg-slate-950 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 text-center">
+      <h2 class="font-cinzel text-3xl font-extrabold text-white mb-3">INTERNATIONAL FIDE TOURNAMENTS</h2>
+      <p class="text-xs sm:text-sm text-slate-400 max-w-2xl mx-auto mb-8">
+        Organizers of the landmark 4th & 5th IS Open International FIDE Rated Tournaments, Odisha State Selection Championships, and the 11th Cuttack Cup.
+      </p>
+
+      <div class="mb-10">
+        <a href="https://s1.chess-results.com/tnr1420724.aspx?lan=1&tno=1420724&zeilen=99999&SNode=S0" target="_blank" rel="noopener noreferrer" class="btn-3d-blue px-8 py-4 rounded-full text-xs sm:text-sm font-black uppercase tracking-wider text-white inline-flex items-center gap-2">
+          <span>🏆 View Official FIDE Results on Chess-Results.com</span> ↗
+        </a>
+      </div>
+
+      <div class="grid grid-cols-1 md:grid-cols-3 gap-6 text-left">
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-emerald-400 bg-emerald-950 px-2 py-0.5 rounded">Upcoming FIDE Event</span>
+          <h3 class="font-cinzel font-bold text-white text-base mt-3 mb-1">5th IS International Open FIDE Rated 2026</h3>
+          <p class="text-xs text-amber-400 mb-2">Classical 90+30 • 9 Rounds Swiss System</p>
+          <p class="text-xs text-slate-400">Welcoming Grandmasters, International Masters, and titled prodigies from across India and abroad.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-blue-400 bg-blue-950 px-2 py-0.5 rounded">FIDE Landmark</span>
+          <h3 class="font-cinzel font-bold text-white text-base mt-3 mb-1">4th IS Open International FIDE Rated 2025</h3>
+          <p class="text-xs text-rose-400 mb-2">Concluded with 600+ Competitors</p>
+          <p class="text-xs text-slate-400">Massive international event broadcasted live with state TV and press coverage across 14 participating states.</p>
+        </div>
+        <div class="p-6 rounded-2xl bg-slate-900 border border-slate-800">
+          <span class="text-[10px] font-bold uppercase tracking-wider text-amber-400 bg-amber-950 px-2 py-0.5 rounded">Annual Championship</span>
+          <h3 class="font-cinzel font-bold text-white text-base mt-3 mb-1">11th Cuttack Cup Chess Tournament</h3>
+          <p class="text-xs text-amber-300 mb-2">Bharat Ratna Atal Bihari Vajpayee Memorial</p>
+          <p class="text-xs text-slate-400">Honoring sports excellence with grand champion trophies and scholarships for budding child masters.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CHESS LAB WIDGETS -->
+  <section id="tools" class="py-20 bg-slate-900/60 border-t border-slate-900">
+    <div class="max-w-4xl mx-auto px-4 text-center">
+      <h2 class="font-cinzel text-3xl font-extrabold text-white mb-2">15 BROWSER CHESS TOOLS & ENGINE</h2>
+      <p class="text-xs sm:text-sm text-slate-400 mb-8">Test tournament clock pacing, calculate FIDE rating deltas, and explore grandmaster opening repertoires.</p>
+
+      <!-- Digital Clock Widget -->
+      <div class="p-8 rounded-3xl bg-slate-950 border border-slate-800 mb-8">
+        <h3 class="font-cinzel font-bold text-lg text-white mb-4">Interactive Tournament Clock</h3>
+        <div class="grid grid-cols-2 gap-4 max-w-md mx-auto mb-4">
+          <button id="clockBtn1" class="p-6 rounded-2xl bg-slate-900 border border-amber-400/40 text-center cursor-pointer">
+            <span class="block text-[10px] font-mono text-slate-400">WHITE</span>
+            <span id="whiteTimer" class="font-mono text-3xl sm:text-4xl font-black text-white">05:00</span>
+          </button>
+          <button id="clockBtn2" class="p-6 rounded-2xl bg-slate-900 border border-slate-800 text-center cursor-pointer">
+            <span class="block text-[10px] font-mono text-slate-400">BLACK</span>
+            <span id="blackTimer" class="font-mono text-3xl sm:text-4xl font-black text-white">05:00</span>
+          </button>
+        </div>
+        <div class="flex justify-center gap-2">
+          <button id="clockToggle" class="px-5 py-2 rounded-full bg-slate-800 hover:bg-slate-700 text-xs font-bold text-white">Start / Pause</button>
+          <button id="clockReset" class="px-5 py-2 rounded-full border border-slate-800 hover:bg-slate-900 text-xs font-bold text-slate-300">Reset</button>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PLAY FREE CHESS ARENA -->
+  <section id="play" class="py-20 bg-slate-950 border-t border-slate-900 text-center">
+    <div class="max-w-4xl mx-auto px-4">
+      <span class="text-xs font-bold uppercase tracking-widest text-amber-400">Instant Access • No Login Required</span>
+      <h2 class="font-cinzel text-3xl sm:text-4xl font-extrabold text-white mt-2 mb-4">PLAY FREE CHESS NOW</h2>
+      <p class="text-xs sm:text-sm text-slate-400 max-w-xl mx-auto mb-8">
+        No accounts, no email forms, zero paywalls. Jump directly into our online chess arena and test your tactical calculation against real players.
+      </p>
+
+      <a href="https://syamchessverse.vercel.app/#creator-spotlight" target="_blank" rel="noopener noreferrer" class="btn-3d-red px-10 py-5 rounded-full text-sm font-black uppercase tracking-wider text-white inline-flex items-center gap-2 shadow-2xl">
+        <span>♟ Launch SyamChessverse Arena (Free Play)</span> ↗
+      </a>
+    </div>
+  </section>
+
+  <!-- CONTACT & LOCATION -->
+  <section id="contact" class="py-20 bg-slate-900/60 border-t border-slate-900">
+    <div class="max-w-7xl mx-auto px-4 sm:px-6 grid grid-cols-1 lg:grid-cols-2 gap-10 items-start">
+      <div class="space-y-4">
+        <h2 class="font-cinzel text-3xl font-extrabold text-white">TALK TO OUR CHESS EXPERTS</h2>
+        <p class="text-xs sm:text-sm text-slate-400">Schedule a free trial class or enquire about upcoming FIDE tournament registrations.</p>
+        <div class="p-6 rounded-2xl bg-slate-950 border border-slate-800 space-y-3 text-xs">
+          <p><strong>Academy:</strong> IS CHESS CENTRE</p>
+          <p><strong>Address:</strong> Mahanadi Vihar, Cuttack, Odisha – 753004, India</p>
+          <p><strong>Direct Mobile:</strong> <a href="tel:+919437208864" class="text-emerald-400 hover:underline">+91 94372 08864</a></p>
+          <p><strong>WhatsApp:</strong> <a href="https://wa.me/919437208864" target="_blank" class="text-emerald-400 hover:underline">+91 94372 08864 (Click to Chat)</a></p>
+          <p><strong>Timings:</strong> Monday – Sunday: 7:00 AM – 9:00 PM IST</p>
+        </div>
+      </div>
+
+      <div class="rounded-2xl border border-slate-800 overflow-hidden shadow-2xl bg-slate-950">
+        <div class="p-3 border-b border-slate-800 flex justify-between items-center text-xs">
+          <span class="text-slate-300 font-semibold">Google Maps Official Location</span>
+          <a href="https://www.google.com/maps/place/IS+CHESS+CENTRE/@20.4633061,85.9112682,17z/" target="_blank" rel="noopener noreferrer" class="text-blue-400 hover:underline">Get Directions ↗</a>
+        </div>
+        <div class="aspect-video w-full">
+          <iframe title="IS Chess Centre Google Maps" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3738.384666355653!2d85.9086933!3d20.4633061!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3a190da2d6c66657%3A0xe541c4f4fa11c97a!2sIS%20CHESS%20CENTRE!5e0!3m2!1sen!2sin!4v1700000000000!5m2!1sen!2sin" width="100%" height="100%" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="bg-slate-950 border-t border-slate-800 py-10 text-center text-xs text-slate-500">
+    <div class="max-w-7xl mx-auto px-4 space-y-4">
+      <p class="font-cinzel text-base text-slate-300 font-bold">IS CHESS CENTRE • CUTTACK, ODISHA</p>
+      <p>Mahanadi Vihar, Cuttack – 753004 • Mobile: +91 94372 08864</p>
+      <p class="text-amber-400/90 font-medium">Crafted & Designed by S K Das • 07798977519</p>
+      <p>© 2026 IS CHESS CENTRE. All Rights Reserved.</p>
+    </div>
+  </footer>
+
+  <script>
+    // Simple interactive clock script
+    let wTime = 300, bTime = 300, timerId = null, active = 'w';
+    const wEl = document.getElementById('whiteTimer');
+    const bEl = document.getElementById('blackTimer');
+    function fmt(s) {
+      const m = Math.floor(s / 60);
+      const sec = s % 60;
+      return String(m).padStart(2, '0') + ':' + String(sec).padStart(2, '0');
+    }
+    function update() {
+      if (active === 'w' && wTime > 0) wTime--;
+      else if (active === 'b' && bTime > 0) bTime--;
+      wEl.textContent = fmt(wTime);
+      bEl.textContent = fmt(bTime);
+    }
+    document.getElementById('clockToggle').onclick = () => {
+      if (timerId) { clearInterval(timerId); timerId = null; }
+      else { timerId = setInterval(update, 1000); }
+    };
+    document.getElementById('clockReset').onclick = () => {
+      if (timerId) { clearInterval(timerId); timerId = null; }
+      wTime = 300; bTime = 300; active = 'w';
+      wEl.textContent = '05:00'; bEl.textContent = '05:00';
+    };
+    document.getElementById('clockBtn1').onclick = () => { active = 'b'; };
+    document.getElementById('clockBtn2').onclick = () => { active = 'w'; };
+  </script>
+</body>
+</html>
